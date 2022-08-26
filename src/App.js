@@ -1,12 +1,14 @@
 import ListNews from "./components/ListNews";
-
+import { NewsProvider } from "./contexts/newsContext";
+import { UserProvider } from "./contexts/userContext";
 
 function App() {
   return (
-    
-        <div>
+      <UserProvider>
+        <NewsProvider>
           <ListNews/>
-        </div>
+        </NewsProvider>
+      </UserProvider>
     
   );
 }

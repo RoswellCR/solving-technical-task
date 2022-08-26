@@ -1,8 +1,8 @@
-export default function News(){
+export default function News({story}){
     return(
         <div>
             <a href="#!">
-                <div>{}hours ago by the author</div>
+                <div>{story.story_title}</div>
                 <div>newss..........</div>
             </a>
             <button>Heart</button> 
