@@ -1,4 +1,4 @@
-import ListNews from "./components/ListNews";
+import Layout from "./components/Layout";
 import { NewsProvider } from "./contexts/newsContext";
 import { UserProvider } from "./contexts/userContext";
 
@@ -6,7 +6,7 @@ function App() {
   return (
       <UserProvider>
         <NewsProvider>
-          <ListNews/>
+          <Layout />
         </NewsProvider>
       </UserProvider>
     
