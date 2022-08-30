@@ -1,5 +1,5 @@
 .container {
-    /* justify-content: left; */
+    
     list-style: none;
     /* ----------------- */
     font-family: Roboto;
@@ -9,7 +9,7 @@
     font-style: normal;
     line-height: 1.75;
     letter-spacing: normal;
-    /* text-align: center; */
+    
     /* ---------------- */
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -17,11 +17,7 @@
 }
 .newsBoxContainer {
     display: flex;
-    /* position: relative; */
-    /* text-decoration: none; */
     color: black;
-    /* height: ; */
-    /* box-sizing: border-box; */
     box-sizing: content-box;
     
 }
@@ -31,14 +27,11 @@
     width: 85%; 
     margin: 10px; 
     height: 100%;
-    /* padding: 5px 50px 50px 10px;  */
-    /* padding-right: 9px; */
     box-sizing: border-box;
     text-decoration: none;
     color: black;
 }
 .buttonFav {
-    /* position: ; */
     right: 0;
     top: 0;
     bottom: 0;
@@ -46,12 +39,10 @@
     /* height: 100%; */
     border: none;
     height: 60px;
-    /* max-height: 100%; */
     box-sizing: border-box;
     padding: 5%;
     border-radius: 0 10px 10px 0;
     margin-bottom: 0;
-    /* min-height: 6vh; */
     box-sizing: content-box;
 }
 
