@@ -4,12 +4,10 @@ import useFetch from '../hooks/useFetch';
 
 const NewsContext = createContext();
 
-const initialData = '';
 
 function NewsProvider({children}){
     const [listNews, setListNews] = useState([]);
     const [load, setLoad] = useState(false);
-    const [listVue, setListVue] = useState([]);
     
     
     function  getListNews({fmwSelected, pages}){ 

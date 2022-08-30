@@ -1,34 +1,40 @@
 import React,{createContext, useState} from 'react';
-import axios from 'axios';
 
 const UserContext = createContext();
 
-const initialData = {id:1, favNews:[]};
+
+const initialData = {id:1, dataId:[], favNews:[  ]};
 
 function UserProvider({children}){
-    const [user, setUser] = useState('');
-    const [favNews, setFavNews] = useState(initialData);
-
-    async function  getList(){ 
-        const res = await axios.get('https://hn.algolia.com/api/v1/search_by_date?query=angular&page=0')
-        console.log(res);
-        
+    const [user, setUser] = useState(initialData);
+    
+    function  getUserFromStorage(){ 
+    
+    }
+    function getData(dataId){
+        setUser(
+            ...user,
+            dataId
+        )
     }
 
-    function toggleFavoriteNewToUser(movieId){
-
-        const isFavorite = user.favoriteMovies.includes(movieId);//Check
-        const favoriteMovies = isFavorite
-            ? user.favoriteMovies.filter(favMovId => favMovId !== movieId) // Delete
-            : [...user.favoriteMovies, movieId] // Add
+    function toggleFavNewsToUser(newsId){
+        console.log(newsId);
+        const isFavorite = user.favoriteNews.includes(newsId);//Check
+        const favoriteNews = isFavorite
+            ? user.favoriteNews.filter(favNewsId => favNewsId !== newsId) // Delete
+            : [...user.favoriteNews, newsId] // Add
 
         setUser({
             ...user,
-            favoriteMovies
+            favoriteNews
         })
     }
 
-    const data = {getList, toggleFavoriteNewToUser}
+    const data = { user,  
+                   toggleFavNewsToUser, 
+                   getData
+                }
     
     return(
         <UserContext.Provider value={data}>
