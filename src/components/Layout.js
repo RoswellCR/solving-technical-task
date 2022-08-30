@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import useFetch from '../hooks/useFetch';
 import ListNews from './ListNews';
+import styles from './Layout.module.css'
 
 export default function Layout(){
     //const {listNews, getListNews} = useContext(NewsContext);
@@ -29,13 +30,13 @@ export default function Layout(){
 
     return(
         <div>
-            <div><h1>Hacker News</h1></div>
-            <div>
-                <button>All</button>
-                <button>My Faves</button>
+            <div className={`${styles.titlePage}  ${styles.TextStyle2}`}><h1>Hacker News</h1></div>
+            <div className={styles.buttonSelectContainer}>
+                <button className={styles.buttonStyle}>All</button>
+                <button className={styles.buttonStyle}>My Faves</button>
             </div>
             <div>
-                <select  onChange={HandleChangeOpt}>
+                <select  onChange={HandleChangeOpt} className={styles.selectOp}>
                     <option value="" disabled selected hidden>Select your news</option>
                     <option value='angular'>Angular</option>
                     <option value='reactjs'>Reacts</option>

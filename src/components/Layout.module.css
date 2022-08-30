@@ -1,0 +1,42 @@
+.buttonSelectContainer {
+    display: flex;
+    justify-content: center;
+
+}
+.buttonSelectContainer button {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    background-color: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.titlePage {
+    margin-left: 15%;
+}
+.selectOp {
+    margin-left: 15%;
+    bottom: 0;
+}
+
+.TextStyle2 {
+
+    font-family: Roboto;
+  
+    font-size: 16px;
+  
+    font-weight: 500;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: 1.75;
+  
+    letter-spacing: normal;
+  
+    /* text-align: center; */
+  
+    /* color: #1797ff; */
+  
+  }

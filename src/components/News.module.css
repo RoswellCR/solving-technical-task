@@ -18,7 +18,7 @@
 .newsBoxContainer {
     display: flex;
     /* position: relative; */
-    text-decoration: none;
+    /* text-decoration: none; */
     color: black;
     /* height: ; */
     /* box-sizing: border-box; */
@@ -34,6 +34,7 @@
     /* padding: 5px 50px 50px 10px;  */
     /* padding-right: 9px; */
     box-sizing: border-box;
+    text-decoration: none;
 }
 .buttonFav {
     /* position: ; */
@@ -43,13 +44,14 @@
     cursor: pointer;
     /* height: 100%; */
     border: none;
-    height: 100px;
+    height: 60px;
     /* max-height: 100%; */
     box-sizing: border-box;
     padding: 5%;
     border-radius: 0 10px 10px 0;
     margin-bottom: 0;
-    min-height: 14vh;
+    /* min-height: 6vh; */
+    box-sizing: content-box;
 }
 
 
